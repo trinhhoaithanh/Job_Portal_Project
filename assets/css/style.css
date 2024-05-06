@@ -198,7 +198,7 @@ a {
 }
 
 .carousel .inner-wrap .carousel-right .job-card .job-card-info .job-card-title{
-      font-family: var(--font); /* Body */
+    font-family: var(--font); /* Body */
     font-size: 18px; 
     line-height: 28px; 
     font-weight: 700; 
@@ -346,9 +346,6 @@ a {
 /* End explore */
 
 /* Lastest */
-.lastest{
-  padding: 80px 0;
-}
 .lastest .inner-wrap .lastest-header{
   text-align: center;
 }
@@ -827,3 +824,261 @@ a {
   outline: none; 
 }
 /* End footer */
+
+
+/* COmpany detail */
+.company-detail{
+  padding: 50px 0;
+}
+
+.company-detail .inner-wrap{
+  
+}
+
+.company-detail .inner-wrap .company-detail-header{
+  width: 1176px; 
+  background: #FFFFFFFF; /* white */
+  border-radius: 6px; /* border-l */
+  border-width: 1px; 
+  border-color: #F3F4F6FF; /* neutral-200 */
+  border-style: solid; 
+}
+
+.company-detail .inner-wrap .company-detail-header .company-detail-image {
+   position: relative;
+}
+
+.company-detail .inner-wrap .company-detail-header .company-detail-image .cover-image img{
+  width: 1176px; 
+  height: 282px;
+  object-fit: cover;
+}
+
+.company-detail .inner-wrap .company-detail-header .company-detail-name{
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-detail .inner-wrap .company-detail-header .company-detail-image .avatar-image{
+  width: 155px; 
+  height: 155px; 
+  background: #F8F9FAFF; /* neutral-150 */
+  border-radius: 78px; 
+  border-width: 5px; 
+  border-color: #FFFFFFFF; /* white */
+  border-style: solid; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 200px;
+  left: 60px;
+}
+
+.company-detail .inner-wrap .company-detail-header .company-detail-image .avatar-image img{
+  width: 96px; 
+  height: 96px;
+}
+
+.company-detail .inner-wrap .company-detail-name, .company-detail .inner-wrap .company-detail-info{
+  padding: 100px 60px 0 60px;
+}
+
+.company-detail .inner-wrap .company-detail-info{
+  padding: 20px 60px 0 60px;
+}
+
+.company-detail .inner-wrap .company-detail-name .company-detail-left h2{
+  font-size: 32px; 
+  line-height: 48px; 
+  font-weight: 700; 
+  color: #171A1FFF;
+} 
+
+.company-detail .inner-wrap .company-detail-name .company-detail-left p{
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 400; 
+  color: #9095A0FF;
+} 
+
+.company-detail .inner-wrap .company-detail-name .company-detail-right .company-detail-button{
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-detail .inner-wrap .company-detail-name .company-detail-right .company-detail-button .company-detail-button-left{
+  height: 44px; 
+  padding: 0 16px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 16px; 
+  line-height: 26px; 
+  font-weight: 400; 
+  color: #0EA89BFF; /* primary-500 */
+  background: #C8FBF6FF; /* primary-150 */
+  opacity: 1; 
+  border: none; 
+  border-radius: 4px; 
+}
+
+.company-detail .inner-wrap .company-detail-name .company-detail-right .company-detail-button .company-detail-button-right{
+  height: 44px; 
+  padding: 0 16px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;  
+  font-size: 16px; 
+  line-height: 26px; 
+  font-weight: 400; 
+  color: #FFFFFFFF; /* white */
+  background: #0EA89BFF; /* primary-500 */
+  opacity: 1; 
+  border: none; 
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.company-detail-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-detail-info .company-detail-info-item p{
+  font-size: 16px; 
+  line-height: 26px; 
+  font-weight: 400; 
+  color: #6E7787FF; 
+}
+
+.company-detail-content{
+  margin-top: 20px;
+  width: 1176px; 
+  background: #FFFFFFFF; /* white */
+  border-radius: 6px; /* border-l */
+  border-width: 1px; 
+  border-color: #F3F4F6FF; /* neutral-200 */
+  border-style: solid;
+  padding: 60px; 
+}
+
+.company-detail-content .company-detail-content-title{
+  font-size: 20px; 
+  line-height: 30px; 
+  font-weight: 700; 
+  color: #171A1FFF;
+}
+
+.company-detail-content .company-detail-content-desc{
+  font-size: 16px; 
+  line-height: 26px; 
+  font-weight: 400; 
+  color: #6E7787FF; 
+}
+
+.company-detail-preview{
+  margin-top: 20px;
+  width: 1176px; 
+  background: #FFFFFFFF; /* white */
+  border-radius: 6px; /* border-l */
+  border-width: 1px; 
+  border-color: #F3F4F6FF; /* neutral-200 */
+  border-style: solid;
+  padding: 60px; 
+}
+
+.company-detail-preview .preview-title{
+  font-size: 20px; 
+  line-height: 30px; 
+  font-weight: 700; 
+  color: #171A1FFF;
+}
+
+.company-detail-preview .preview-card .preview-card-info{
+  display: flex;
+  justify-content: space-between;
+}
+.company-detail-preview .preview-card .preview-card-info img{
+  width: 36px; 
+  height: 36px; 
+  background: #A5F8F1FF; /* primary-200 */
+  opacity: 1; 
+  overflow: hidden; 
+  border-radius: 18px; 
+}
+
+.company-detail-preview .preview-card .preview-card-content, .preview-card-info-date{
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 400; 
+  color: #171A1FFF;
+}
+
+
+
+.company-detail-preview .preview-card .preview-card-content{
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 400; 
+  color: #171A1FFF; 
+  margin-top: 10px;
+}
+
+.premium-update .inner-wrap{
+  width: 733px; 
+  height: 228px; 
+  background: #FFF6F0FF; /* secondary-100 */
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  margin-top: 20px;
+}
+
+.premium-update{
+  width: 1176px; 
+  display: flex;
+  justify-content: center;
+}
+
+.premium-update-left .premium-update-title{
+  font-size: 20px; 
+  line-height: 30px; 
+  font-weight: 700; 
+  color: #FF832BFF;
+}
+
+.premium-update-left .premium-update-desc{
+
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 400; 
+  color: #6E7787FF;
+}
+
+.premium-update-left .button-premium{
+  width: 160px; 
+  height: 36px; 
+  padding: 0 12px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 400; 
+  color: #FFFFFFFF; /* white */
+  background: #FF832BFF; /* secondary-500 */
+  opacity: 1; 
+  border: none; 
+  border-radius: 4px;
+}
+
+.premium-update-left .button-premium:hover{
+
+  color: #FFFFFFFF;
+  background: #E96100FF;
+}
+
+

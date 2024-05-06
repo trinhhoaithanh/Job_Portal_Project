@@ -35,8 +35,8 @@
             include './login/login.php';
         elseif ($page == 'register')
             include './register/register.php';
-        // elseif ($page == 'search')
-        //     include 'search.php';
+        elseif ($page == 'company')
+            include './company/company.php';
         // elseif ($page == 'dashboard')
         //     include './dashboard/dashboard.php';
         // elseif ($page == 'productform')
@@ -58,7 +58,7 @@
         include 'assets/utils/footer.php';
     ?>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/map.js"></script>
+
 </body>
 
 </html>

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JobNest - A best place to start a job</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -19,10 +20,12 @@
                 <div class="carousel-left ">
                     <h1 class="carousel-heading">
                         <span>16,780 Jobs</span>
-                         For You
-                    
+                        For You
+
                     </h1>
-                    <p class="carousel-desc">Non enim eu excepteur cupidatat consectetur do ea est reprehenderit incididunt irure veniam cupidatat est non amet. Enim duis aute tempor laboris ipsum dolore non.</p>
+                    <p class="carousel-desc">Non enim eu excepteur cupidatat consectetur do ea est reprehenderit
+                        incididunt irure veniam cupidatat est non amet. Enim duis aute tempor laboris ipsum dolore non.
+                    </p>
                     <button class="button button-1">Explore now</button>
                 </div>
 
@@ -36,7 +39,7 @@
                             <h6 class="job-card-title">Java Developer</h6>
                             <p class="job-card-salary">$120K - $130K</p>
                         </div>
-                        
+
                     </div>
 
                     <div class="job-card-2">
@@ -45,7 +48,7 @@
                             <h6 class="job-card-title">UI / UX Designer</h6>
                             <p class="job-card-salary">$100K - $110K</p>
                         </div>
-                        
+
                     </div>
                 </div>
 
@@ -60,15 +63,14 @@
             <div class="inner-wrap">
                 <h2 class="explore-heading">Explore more jobs</h2>
                 <div class="search-form">
-                    <form id="searchForm" action=""
-                    method="post" class="input-group mb-3">
-                    <input id="searchInput" name="keyword" type="search" class="form-control"
-                        placeholder="Input the job's name" aria-label="Recipient's username"
-                        aria-describedby="button-addon2">
-                    <button class="button-search btn btn-outline-success" type="submit" id="button-addon2">Search</button>
-        </form>
+                    <form id="searchForm" action="" method="post" class="input-group mb-3">
+                        <input id="searchInput" name="keyword" type="search" class="form-control"
+                            placeholder="Input the job's name" aria-label="Recipient's username"
+                            aria-describedby="button-addon2">
+                        <button class="button-search btn btn-outline-success" type="submit"
+                            id="button-addon2">Search</button>
+                    </form>
                 </div>
-                
 
                 <div class="job-field">
                     <div class="job-field-item">
@@ -95,8 +97,6 @@
                         <p class="job-field-quantity">2473 jobs</p>
                     </div>
                 </div>
-
-                
             </div>
         </div>
     </div>
@@ -111,8 +111,7 @@
                         Exercitation dolore reprehenderit fugi
                     </p>
                 </div>
-                
-                
+
                 <div class="lastest-list">
                     <div class="lastest-item">
                         <div class="job-info">
@@ -137,7 +136,7 @@
                         <div class="job-address">
                             <i class="fa-regular fa-bookmark"></i>
                             Onsite
-                        </div>     
+                        </div>
                     </div>
 
                     <div class="lastest-item">
@@ -163,7 +162,7 @@
                         <div class="job-address">
                             <i class="fa-regular fa-bookmark"></i>
                             Hybrid
-                        </div>     
+                        </div>
                     </div>
 
                     <div class="lastest-item">
@@ -189,7 +188,7 @@
                         <div class="job-address">
                             <i class="fa-regular fa-bookmark"></i>
                             Remote
-                        </div>     
+                        </div>
                     </div>
 
                     <div class="lastest-item">
@@ -215,7 +214,7 @@
                         <div class="job-address">
                             <i class="fa-regular fa-bookmark"></i>
                             Onsite
-                        </div>     
+                        </div>
                     </div>
 
                     <div class="lastest-item">
@@ -241,7 +240,7 @@
                         <div class="job-address">
                             <i class="fa-regular fa-bookmark"></i>
                             Hybrid
-                        </div>     
+                        </div>
                     </div>
 
                     <div class="lastest-item">
@@ -267,7 +266,7 @@
                         <div class="job-address">
                             <i class="fa-regular fa-bookmark"></i>
                             Remote
-                        </div>     
+                        </div>
                     </div>
                 </div>
 
@@ -294,7 +293,7 @@
                         <div class="company-image">
                             <img src="./assets/images/company-1.svg" alt="">
                         </div>
-                       
+
                         <h3 class="company-name">ALIQ</h3>
 
                         <p class="job-info"><span>20 jobs</span> | New York</p>
@@ -304,7 +303,7 @@
                         <div class="company-image">
                             <img src="./assets/images/company-2.svg" alt="">
                         </div>
-                       
+
                         <h3 class="company-name">ESSE LOREM</h3>
 
                         <p class="job-info"><span>20 jobs</span> | New York</p>
@@ -314,7 +313,7 @@
                         <div class="company-image">
                             <img src="./assets/images/company-3.svg" alt="">
                         </div>
-                       
+
                         <h3 class="company-name">LABORUM</h3>
 
                         <p class="job-info"><span>10 jobs</span> | New York</p>
@@ -324,7 +323,7 @@
                         <div class="company-image">
                             <img src="./assets/images/company-4.svg" alt="">
                         </div>
-                       
+
                         <h3 class="company-name">DESERUNT</h3>
 
                         <p class="job-info"><span>24 jobs</span> | New York</p>
@@ -344,7 +343,8 @@
             <div class="inner-wrap">
                 <div class="build-profile-left">
                     <h2 class="build-profile-title">Build a great profile</h2>
-                    <p class="build-profile-desc">Do consectetur proident proident id eiusmod deserunt consequat pariatur ad ex velit do Lorem reprehenderit.</p>
+                    <p class="build-profile-desc">Do consectetur proident proident id eiusmod deserunt consequat
+                        pariatur ad ex velit do Lorem reprehenderit.</p>
                     <button class="button-create">Create</button>
                 </div>
 
@@ -409,7 +409,7 @@
                         </div>
                         <div class="advice-item-content">
                             <p class="advice-item-content-sub-title">Do consectetur</p>
-                            <h5 class="advice-item-content-title">Eu labore ex nostrud fugiat sit  non nulla</h5>
+                            <h5 class="advice-item-content-title">Eu labore ex nostrud fugiat sit non nulla</h5>
                             <div class="advice-item-content-info">
                                 <p class="advice-item-content-info-date">Dec 22, 2022</p>
                                 <p class="advice-item-content-info-read-duration">5 mins read</p>
@@ -425,66 +425,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="inner-footer">
-                <div class="footer-left">
-                    <div class="footer-left-list">
-                        <div class="footer-left-item">
-                            <h3 class="item-heading">About</h3>
-                            <ul class="item-list">
-                                <li class="item">Home</li>
-                                <li class="item">Shop</li>
-                                <li class="item">Our story</li>
-                                <li class="item">Blogs</li>
-                            </ul>
-                        </div>
-    
-                        <div class="footer-left-item">
-                            <h3 class="item-heading">Help</h3>
-                            <ul class="item-list">
-                                <li class="item">Shipping & Returns</li>
-                                <li class="item">Track Order</li>
-                                <li class="item">FAQs</li>
-                            </ul>
-                        </div>
-    
-                        <div class="footer-left-item">
-                            <h3 class="item-heading">Contact</h3>
-                            <ul class="item-list">
-                                <li class="item">Phone: (+1) 123 456 7893</li>
-                                <li class="item">Email: name@gmail.com</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <button class="language-btn">
-                        English <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                </div>
-    
-                <div class="footer-right">
-                    <h3 class="footer-right-heading">Subscribe to our newsletters</h3>
-                    <p class="footer-right-desc">Duis ea tempor commodo amet reprehende</p>
-                    <div class="input-group mb-3">
-                        <input type="text" class="input-footer form-control" placeholder="Input your email"
-                            aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn-input btn btn-outline-secondary" type="button"
-                            id="button-addon2">Subsribe</button>
-                    </div>
-                    <div class="footer-right-social">
-                        <i style="color:#2EBAE8FF" class="fa-brands fa-twitter"></i>
-                        <i style="color:#2E6FE8FF" class="fa-brands fa-facebook"></i>
-                        <i style="color: #7797E4FF" class="fa-brands fa-linkedin"></i>
-                        <i style="color: #E82E2EFF" class="fa-brands fa-youtube"></i>
-                    </div>
-                    <p class="copy-right">© 2022 Brand, Inc. <span class="dot">·</span> Privacy <span class="dot">·</span>
-                        Terms <span class="dot">·</span> Sitemap</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End footer -->
-    
 </body>
+
 </html>
