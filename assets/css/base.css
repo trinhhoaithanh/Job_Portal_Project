@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+:root{
+    --color-text: #232323;
+    --color-header: #EFEFEF;
+    --color-btn: #0EA89BFF;
+    --color-btn-text: #1B2026;
+    --color-icon:#ff8484;
+    --font:"Lato", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+
+body{
+    font-family: var(--font);
+    color: var(--color-text);
+}
+
+.container-header{
+    width: 100%;
+    padding-left:50px ;
+    padding-right: 50px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin-left:auto ;
+    margin-right: auto;
+}
+
+.button{
+    width: 186px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.button-1{
+    width: 186px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: var(--color-btn);
+    color: white;
+    border: none;
+    margin-right: 10px;
+}
+
