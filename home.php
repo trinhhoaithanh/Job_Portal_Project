@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JobNest - A best place to start a job</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
     <!-- Carousel -->
     <section class="carousel">
         <div class="container">
@@ -99,7 +84,7 @@
                                 echo "
                             <div class='job-field-item'>
                             <h6 class='job-field-title'>" . $row['category_name'] . "</h6>
-                            <p class='job-field-quantity'>" . $row['category_job_quantity'] . "</p>
+
                         </div>  ";
                             }
                         } else {
@@ -117,11 +102,13 @@
 
 
                     ?>
-                    
+
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- End Explore -->
 
     <!-- Lastest -->
     <div class="lastest">
@@ -153,7 +140,7 @@
                         $sql = "SELECT Jobs.job_id, Jobs.job_title, Jobs.job_salary, Jobs.job_location, Jobs.job_mode, Companies.company_name, Companies.company_image
         FROM Jobs
         JOIN Companies
-        ON Jobs.company_id = Companies.company_id;";
+        ON Jobs.company_id = Companies.company_id LIMIT 3";
                         $result = $conn->query($sql);
 
 
@@ -203,13 +190,11 @@
 
                     ?>
                 </div>
-
-                <!-- <div class="see-more-button">
-                    <button>See more</button>
-                </div> -->
             </div>
         </div>
     </div>
+
+   <!-- End Lastest -->
 
     <!-- Companies -->
     <div class="company">
@@ -223,7 +208,7 @@
                 </div>
 
                 <div class="company-list">
-                <?php
+                    <?php
                     if (isset($_SESSION['username'])) {
                         $servername = "localhost";
                         $username = "root";
@@ -238,7 +223,7 @@
 
                         }
 
-                        $sql = "SELECT * FROM companies";
+                        $sql = "SELECT * FROM companies LIMIT 4";
                         $result = $conn->query($sql);
 
 
@@ -247,13 +232,13 @@
                             while ($row = $result->fetch_assoc()) {
                                 echo "
                                 <div class='company-item'>
-                                <div class='company-image'>
-                                    <img src='" . $row['company_image'] . "' alt='>
-                                </div>
+                                    <div class='company-image'>
+                                        <img src='" . $row['company_image'] . "'>
+                                    </div>
         
-                                <h3 class='company-name'>" . $row['company_name'] . "</h3>
-        
-                                <p class='job-info'><span>" . $row['company_quantity_job'] . "</span> | " . $row['company_address'] . "</p>
+                                    <h3 class='company-name'>" . $row['company_name'] . "</h3>
+            
+                                    <p class='job-info'><span>" . $row['company_quantity_job'] . "</span> | " . $row['company_address'] . "</p>
                             </div>  ";
                             }
                         } else {
@@ -266,58 +251,18 @@
 
 
                     } else {
-                        echo "<script>alert('You need to login to view the list of products'); window.location.href = 'http://localhost/JobPortalProject/index.php?page=login';</script>";
+                        echo "<script>alert('You need to login to view the list of products'); window.location.href = './login/login.php';</script>";
                     }
 
 
                     ?>
-                    <!-- <div class="company-item">
-                        <div class="company-image">
-                            <img src="./assets/images/company-1.svg" alt="">
-                        </div>
 
-                        <h3 class="company-name">ALIQ</h3>
-
-                        <p class="job-info"><span>20 jobs</span> | New York</p>
-                    </div>
-
-                    <div class="company-item">
-                        <div class="company-image">
-                            <img src="./assets/images/company-2.svg" alt="">
-                        </div>
-
-                        <h3 class="company-name">ESSE LOREM</h3>
-
-                        <p class="job-info"><span>20 jobs</span> | New York</p>
-                    </div>
-
-                    <div class="company-item">
-                        <div class="company-image">
-                            <img src="./assets/images/company-3.svg" alt="">
-                        </div>
-
-                        <h3 class="company-name">LABORUM</h3>
-
-                        <p class="job-info"><span>10 jobs</span> | New York</p>
-                    </div>
-
-                    <div class="company-item">
-                        <div class="company-image">
-                            <img src="./assets/images/company-4.svg" alt="">
-                        </div>
-
-                        <h3 class="company-name">DESERUNT</h3>
-
-                        <p class="job-info"><span>24 jobs</span> | New York</p>
-                    </div> -->
                 </div>
-
-                <!-- <div class="see-more-button">
-                    <button>See more</button>
-                </div> -->
             </div>
         </div>
     </div>
+
+    <!-- End Companies -->
 
     <!-- Build profile -->
     <div class="build-profile">
@@ -344,6 +289,8 @@
             </div>
         </div>
     </div>
+
+    <!-- End Build profile -->
 
     <!-- Career Advice -->
     <div class="career-advice">
@@ -407,6 +354,4 @@
         </div>
     </div>
 
-</body>
-
-</html>
+    <!-- End Career Advice -->

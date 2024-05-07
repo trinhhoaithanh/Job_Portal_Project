@@ -243,7 +243,8 @@ a {
 .explore .inner-wrap .job-field .job-field-item{
   background: #ECFDFCFF;
   border-radius: 8px;
-  padding: 20px 0;
+  padding: 20px;
+  text-align: center;
 }
 .job-item-2{
   background: #FFF6F0FF !important; 
@@ -469,15 +470,15 @@ a {
   justify-content: space-between;
 }
 
-.company .inner-wrap .company-list .company-item{
-  width: 272px; 
-  height: 238px; 
-  background: #FAFAFBFF; /* neutral-100 */
+.company .inner-wrap .company-list .company-item{ 
+  background: #FAFAFBFF; 
   border-radius: 4px; 
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: center; 
+  width: calc(100%/4 - 10px);
+  padding: 20px;
 
 }
 

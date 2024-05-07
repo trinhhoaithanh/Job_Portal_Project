@@ -41,10 +41,6 @@
             include './candidate/candidate.php';
         elseif ($page == 'job')
             include './job/job.php';
-        // elseif ($page == 'ajax')
-        //     include './ajax/ajax.php';
-        // elseif ($page == 'product_detail')
-        //     include './product/product_detail.php';
     } else {
         // Default to home.php
         include 'home.php';
