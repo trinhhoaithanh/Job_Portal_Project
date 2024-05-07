@@ -13,6 +13,42 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
+        .card {
+        width: 1100px;
+        height: 800px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+    } 
+    .card-1 {
+        width: 1100px;
+        height: 450px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+    } 
+    .card-2 {
+        width: 1100px;
+        height: 250px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+    } 
+    .card-3 {
+        width: 1100px;
+        height: 250px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+    } 
         .save-button {
     padding: 10px 20px;
     background-color: #007bff;
@@ -53,6 +89,7 @@
 
     <div style="width: 78%; float:right">
             <form class="createJobInfo" id="jobInfoForm" method="post" action="create_job_processing.php">
+            <div class="card">
                 <h4 id="scrollJob">Job Information</h4><br>
                 <div class="mb-3">
                     <label for="exampleInputJobTitle1" class="field-name form-label">Job title (required)</label>
@@ -92,8 +129,10 @@
                 </div><br>
                 <div class="mb-3">
                     <label for="exampleInputJobDescription1" class="field-name form-label">Job description (required)</label><br>
-                    <textarea id = "jobdescription" name="jobdescription" rows="5" cols="135" required></textarea>
-                </div><br><br><br><br><br>
+                    <textarea id = "jobdescription" name="jobdescription" rows="5" cols="125" required></textarea>
+                </div>
+</div><br><br><br><br><br>
+            <div class="card-1">
                 <h4 id="scrollCompany">Company Information</h4><br>
                 <div class="mb-3">
                     <label for="exampleInputCompanyName1" class="field-name form-label">Company name (required)</label>
@@ -116,8 +155,10 @@
                 </div><br>
                 <div class="mb-3">
                     <label for="exampleInputCompanyDescription1" class="field-name form-label">Company description (required)</label><br>
-                    <textarea id="companydescription" name="companydescription" rows="5" cols="135" required></textarea>
+                    <textarea id="companydescription" name="companydescription" rows="5" cols="125" required></textarea>
+                </div>
                 </div><br><br><br><br><br>
+                <div class="card-2">
                 <h4 id="scrollContact">Contact Information</h4><br>
                 <div class="mb-3">
                     <label for="exampleInputContactPerson1" class="field-name form-label">Contact person (required)</label>
@@ -125,7 +166,9 @@
                         id="contactperson" required>
                 </div>
                 <input type="checkbox" id="displayContactPerson" name="displayContactPerson" value="display">
-                <label for="display">Display contact person in company information</label><br><br><br><br><br><br><br>
+                <label for="display">Display contact person in company information</label>
+            </div><br><br><br><br><br><br><br>
+            <div class="card-3">
                 <h4 id="scrollReceive">Receive Application</h4><br>
                 <div style="width: 17%; float:left">
                     <input type="radio" id="email" name="receive_via" value="email">
@@ -141,6 +184,7 @@
                    <!-- <input id="submitCancel" type="submit" name="submit" value="Cancel">
                     <input id="submitSave" type="submit" name="submit" value="Save">
                     <input id="submitPublish" type="submit" name="submit" value="Save & Publish"> -->
+                </div><br><br><br>
                     <input id="submit" type="submit" name="submit" value="Save">
             </form>
     </div>
