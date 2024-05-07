@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql_insert = "INSERT INTO users (user_name, user_password, user_email, user_role) VALUES ('$username', '$password','$useremail', 'Job Seeker')";
         if ($conn->query($sql_insert) === TRUE) {
             echo '<script type="text/javascript">alert("User created successfully\n");</script>';
-            echo '<script type="text/javascript">window.location.href = "http://localhost/JobPortalProject/index.php?page=login";</script>';
+            echo '<script type="text/javascript">window.location.href = "./index.php?page=login";</script>';
         } else {
             echo '<script type="text/javascript">alert("Error: " . $sql_insert . "<br>" . $conn->error);</script>';
         }

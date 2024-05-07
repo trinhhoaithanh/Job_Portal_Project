@@ -10,13 +10,13 @@
 
             <div class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="http://localhost/JobPortalProject/index.php?page=home">Home</a>
+                    <li class="nav-item"><a href="./index.php?page=home">Home</a>
                     </li>
-                    <li class="nav-item"><a href="http://localhost/JobPortalProject/index.php?page=home">All Jobs</a>
+                    <li class="nav-item"><a href="./index.php?page=job">All Jobs</a>
                     </li>
-                    <li class="nav-item"><a href="http://localhost/JobPortalProject/index.php?page=home">Companies</a>
+                    <li class="nav-item"><a href="./index.php?page=company">Companies</a>
                     </li>
-                    <li class="nav-item"><a href="http://localhost/JobPortalProject/index.php?page=home">Candidates</a>
+                    <li class="nav-item"><a href="./index.php?page=candidate">Candidates</a>
                     </li>
                     <li class="nav-item"><a href="assets/utils/logout.php">Log out</a></li>
                 </ul>

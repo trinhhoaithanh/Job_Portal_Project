@@ -67,7 +67,7 @@
                 <p>Don't have an account? <a style="font-size: 14px; 
                                                     line-height: 22px; 
                                                     font-weight: 700; 
-                                                    color: #0EA89BFF;" href="http://localhost/JobPortalProject/index.php?page=register">Sign up</a></p>
+                                                    color: #0EA89BFF;" href="./index.php?page=register">Sign up</a></p>
             </div>
 
         </div>

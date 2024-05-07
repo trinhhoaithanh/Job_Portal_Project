@@ -11,19 +11,19 @@
     
                 <div class="nav">
                     <ul class="nav-list">
-                        <li class="nav-item" ><a href="http://localhost/JobPortalProject/index.php?page=home">Home</a>
+                        <li class="nav-item" ><a href="./index.php?page=home">Home</a>
                         </li>
-                        <li class="nav-item" ><a href="http://localhost/JobPortalProject/index.php?page=job">All Jobs</a>
+                        <li class="nav-item" ><a href="./index.php?page=job">All Jobs</a>
                         </li>
-                        <li class="nav-item" ><a href="http://localhost/JobPortalProject/index.php?page=company">Companies</a>
+                        <li class="nav-item" ><a href="./index.php?page=company">Companies</a>
                         </li>
-                        <li class="nav-item" ><a href="http://localhost/JobPortalProject/index.php?page=candidate">Candidates</a>
+                        <li class="nav-item" ><a href="./index.php?page=candidate">Candidates</a>
                         </li>
                 
-                        <li class="nav-item" ><a href="http://localhost/JobPortalProject/index.php?page=login">Login</a>
+                        <li class="nav-item" ><a href="./index.php?page=login">Login</a>
                         </li>
                         <li class="nav-item"><a
-                                href="http://localhost/JobPortalProject/index.php?page=register">Register</a></li>
+                                href="./index.php?page=register">Register</a></li>
                     </ul>
                 </div>
     

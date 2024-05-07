@@ -97,7 +97,7 @@
 
 
                     } else {
-                        echo "<script>alert('You need to login to view the list of products'); window.location.href = 'http://localhost/JobPortalProject/index.php?page=login';</script>";
+                        echo "<script>alert('You need to login to view the list of products'); window.location.href = './index.php?page=login';</script>";
                     }
 
 
@@ -184,7 +184,7 @@
 
 
                     } else {
-                        echo "<script>alert('You need to login to view the list of products'); window.location.href = 'http://localhost/JobPortalProject/index.php?page=login';</script>";
+                        echo "<script>alert('You need to login to view the list of products'); window.location.href = './index.php?page=login';</script>";
                     }
 
 

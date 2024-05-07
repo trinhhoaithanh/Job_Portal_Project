@@ -111,7 +111,7 @@
                     <p>Already have an account? <a style="font-size: 14px; 
   line-height: 22px; 
   font-weight: 700; 
-  color: #0EA89BFF;" href="http://localhost/JobPortalProject/index.php?page=login">Sign in</a></p>
+  color: #0EA89BFF;" href="./index.php?page=login">Sign in</a></p>
                 </div>
 
             </div>

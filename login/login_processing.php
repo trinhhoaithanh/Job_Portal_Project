@@ -38,25 +38,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Redirect to appropriate dashboard
             // if($role == 'admin'){
-            //     echo "<script>alert('Login successfully'); window.location.href = 'http://localhost/JobPortalProject/index.php?page=dashboard';</script>";
+            //     echo "<script>alert('Login successfully'); window.location.href = './index.php?page=dashboard';</script>";
             // }
             // else{
-            //     echo "<script>alert('Login successfully'); window.location.href = 'http://localhost/JobPortalProject/index.php?page=home';</script>";
+            //     echo "<script>alert('Login successfully'); window.location.href = './index.php?page=home';</script>";
             // }
 
-            echo "<script>alert('Login successfully'); window.location.href = 'http://localhost/JobPortalProject/index.php?page=home';</script>";
+            echo "<script>alert('Login successfully'); window.location.href = './index.php?page=home';</script>";
 
             exit(); 
         } else {
             // Login failed
-            echo "<script>alert('Invalid username or password. Please try again.'); window.location.href = 'http://localhost/JobPortalProject/index.php?page=login';</script>";
+            echo "<script>alert('Invalid username or password. Please try again.'); window.location.href = './index.php?page=login';</script>";
 
             exit();
         }
     } else {
         // User not found
         // Redirect back to login form
-        echo "<script>alert('User not found. Please register first.'); window.location.href = 'http://localhost/JobPortalProject/index.php?page=register';</script>";
+        echo "<script>alert('User not found. Please register first.'); window.location.href = './index.php?page=register';</script>";
 
         exit();
     }
