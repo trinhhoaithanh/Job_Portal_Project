@@ -106,6 +106,7 @@ VALUES
 ('jane_smith', 'secret456', 'jane@example.com', 'Job Seeker'),
 ('guest123', 'guestpass', NULL, 'Guest'),
 ('admin_user', 'admin123', 'admin@example.com', 'Employer'),
+('thanh1410', 'Thanh@1410', 'thanh@example.com', 'Job Seeker'),
 ('test_user', 'test123', 'test@example.com', 'Job Seeker');
 
 INSERT INTO Categories (category_name, category_job_quantity) 
@@ -118,11 +119,11 @@ VALUES
 
 INSERT INTO Companies (company_name, company_address, company_contact_email, company_website, company_quantity_job, company_quantity_employer, company_quantity_follower, company_desc, company_image, company_cover_image, company_reason, company_job_field) 
 VALUES 
-('Tech Solutions Inc.', '123 Main St, New York', 'info@techsolutions.com', 'https://www.techsolutions.com', 50, 100, 500, 'Tech Solutions Inc. is a leading software development company...', '/images/tech_solutions_logo.png', '/images/tech_solutions_cover.jpg', 'We strive to innovate and deliver high-quality solutions to our clients...', 'Technology'),
-('Marketing Pro LLC', '456 Elm St, Los Angeles', 'contact@marketingpro.com', 'https://www.marketingpro.com', 30, 50, 200, 'Marketing Pro LLC specializes in digital marketing services...', '/images/marketing_pro_logo.png', '/images/marketing_pro_cover.jpg', 'Our team is passionate about helping businesses grow their online presence...', 'Marketing'),
-('Data Insights Co.', '789 Oak St, San Francisco', 'hello@datainsights.co', 'https://www.datainsights.co', 10, 20, 100, 'Data Insights Co. provides advanced data analysis solutions...', '/images/data_insights_logo.png', '/images/data_insights_cover.jpg', 'We empower organizations with actionable insights from their data...', 'Data Analytics'),
-('Design Studio', '101 Pine St, Chicago', 'info@designstudio.com', 'https://www.designstudio.com', 20, 30, 150, 'Design Studio offers creative design services for various industries...', '/images/design_studio_logo.png', '/images/design_studio_cover.jpg', 'Our team of designers brings ideas to life through stunning visuals...', 'Design'),
-('Financial Experts LLC', '202 Maple St, Houston', 'contact@financialexperts.com', 'https://www.financialexperts.com', 15, 25, 120, 'Financial Experts LLC provides comprehensive accounting services...', '/images/financial_experts_logo.png', '/images/financial_experts_cover.jpg', 'We help businesses manage their finances effectively and optimize profitability...', 'Finance');
+('Tech Solutions Inc.', '123 Main St, New York', 'info@techsolutions.com', 'https://www.techsolutions.com', 50, 100, 500, 'Tech Solutions Inc. is a leading software development company...', 'https://www.shutterstock.com/shutterstock/photos/1862762845/display_1500/stock-vector-abstract-initial-letter-s-logo-blue-overlay-double-water-drops-isolated-on-white-background-1862762845.jpg', '/images/tech_solutions_cover.jpg', 'We strive to innovate and deliver high-quality solutions to our clients...', 'Technology'),
+('Marketing Pro LLC', '456 Elm St, Los Angeles', 'contact@marketingpro.com', 'https://www.marketingpro.com', 30, 50, 200, 'Marketing Pro LLC specializes in digital marketing services...', 'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/a-logo-design%7C-company-logo-template-7246ba946d6686a9a5b984a1e4380b1b_screen.jpg?ts=1665828706', '/images/marketing_pro_cover.jpg', 'Our team is passionate about helping businesses grow their online presence...', 'Marketing'),
+('Data Insights Co.', '789 Oak St, San Francisco', 'hello@datainsights.co', 'https://www.datainsights.co', 10, 20, 100, 'Data Insights Co. provides advanced data analysis solutions...', '/images/data_insights_logo.png', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQXBwUGajz0YZaTetavuT_BnZFaIYjtsy3hPII0Cmtmg&s', 'We empower organizations with actionable insights from their data...', 'Data Analytics'),
+('Design Studio', '101 Pine St, Chicago', 'info@designstudio.com', 'https://www.designstudio.com', 20, 30, 150, 'Design Studio offers creative design services for various industries...', '/images/design_studio_logo.png', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3kFVqXzPkD-7_lywTXlD1xju1yvzz48EHKs9lngRBvA&s', 'Our team of designers brings ideas to life through stunning visuals...', 'Design'),
+('Financial Experts LLC', '202 Maple St, Houston', 'contact@financialexperts.com', 'https://www.financialexperts.com', 15, 25, 120, 'Financial Experts LLC provides comprehensive accounting services...', '/images/financial_experts_logo.png', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxK8fivAboqqFC6ptQTSH-366XQ06DNivd5v09Q9kSIA&s', 'We help businesses manage their finances effectively and optimize profitability...', 'Finance');
 
 
 INSERT INTO Jobs (employer_id, company_id, job_title, job_description, job_location, job_salary, date_posted, job_mode, job_type, category_id) 
