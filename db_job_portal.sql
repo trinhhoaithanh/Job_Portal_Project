@@ -119,8 +119,31 @@ VALUES
 
 INSERT INTO Companies (company_name, company_address, company_contact_email, company_website, company_quantity_job, company_quantity_employer, company_quantity_follower, company_desc, company_image, company_cover_image, company_reason, company_job_field) 
 VALUES 
-('Tech Solutions Inc.', '123 Main St, New York', 'info@techsolutions.com', 'https://www.techsolutions.com', 50, 100, 500, 'Tech Solutions Inc. is a leading software development company...', 'https://www.shutterstock.com/shutterstock/photos/1862762845/display_1500/stock-vector-abstract-initial-letter-s-logo-blue-overlay-double-water-drops-isolated-on-white-background-1862762845.jpg', '/images/tech_solutions_cover.jpg', 'We strive to innovate and deliver high-quality solutions to our clients...', 'Technology'),
-('Marketing Pro LLC', '456 Elm St, Los Angeles', 'contact@marketingpro.com', 'https://www.marketingpro.com', 30, 50, 200, 'Marketing Pro LLC specializes in digital marketing services...', 'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/a-logo-design%7C-company-logo-template-7246ba946d6686a9a5b984a1e4380b1b_screen.jpg?ts=1665828706', '/images/marketing_pro_cover.jpg', 'Our team is passionate about helping businesses grow their online presence...', 'Marketing'),
+('Tech Solutions Inc.', '123 Main St, New York', 'info@techsolutions.com', 'https://www.techsolutions.com', 50, 100, 500, 'Tech Solutions Inc. is not just a software development company; we are a team of passionate individuals who breathe technology. Our expertise lies in transforming ideas into high-quality, innovative software solutions that drive business success. With a global footprint, we have been delivering tailored software applications to businesses across various industries.', 'https://www.shutterstock.com/shutterstock/photos/1862762845/display_1500/stock-vector-abstract-initial-letter-s-logo-blue-overlay-double-water-drops-isolated-on-white-background-1862762845.jpg', '/images/tech_solutions_cover.jpg', 'We strive to innovate and deliver high-quality solutions to our clients...', 'Technology'),
+('Marketing Pro LLC', '456 Elm St, Los Angeles', 'contact@marketingpro.com', 'https://www.marketingpro.com', 30, 50, 200, '
+    Marketing Pro LLC is a full-service creative digital agency with core expertise in Digital Marketing, Design, and Development. They’re based in the Miami & Fort Lauderdale Area. Here’s what they offer:
+
+    Digital Marketing Services: They provide a wide range of digital marketing services, including:
+        Search Engine Optimization (SEO): Improving your website’s visibility on search engines.
+        Social Media Marketing (SMM): Managing and optimizing social media platforms.
+        Pay-Per-Click (PPC) Management: Creating and managing effective PPC campaigns.
+        Ad Management: Handling online advertising campaigns.
+        Copywriting: Crafting compelling content for websites and marketing materials.
+        Google My Business (GMB) Management: Enhancing your local business presence on Google.
+        Link Building: Building high-quality backlinks to improve SEO.
+        And more!
+
+    Website Design & Development: They create custom websites tailored to your brand’s personality and target market. Their process includes:
+        Web Strategy Planning: Thorough research into your industry, competitors, and target audience.
+        Information Architecture: Mapping out landing pages, site structure, and navigation.
+        Creative Design: Bringing your website to life with color, branding, and user-friendly design.
+        Quality Assurance (QA): Rigorous testing to ensure a superior user experience.
+        Launch & Optimization: Setting up servers and finalizing updates.
+', 'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/a-logo-design%7C-company-logo-template-7246ba946d6686a9a5b984a1e4380b1b_screen.jpg?ts=1665828706', '/images/marketing_pro_cover.jpg', '
+    Passionate Team: Their creative young souls are fueled by extraordinary ideas.
+    Comprehensive Services: From SEO to design, they cover all aspects of digital marketing.
+    Trusted by Startups: Over 100+ startups and freelance businesses rely on their expertise.
+', 'Marketing'),
 ('Data Insights Co.', '789 Oak St, San Francisco', 'hello@datainsights.co', 'https://www.datainsights.co', 10, 20, 100, 'Data Insights Co. provides advanced data analysis solutions...', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQXBwUGajz0YZaTetavuT_BnZFaIYjtsy3hPII0Cmtmg&s', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQXBwUGajz0YZaTetavuT_BnZFaIYjtsy3hPII0Cmtmg&s', 'We empower organizations with actionable insights from their data...', 'Data Analytics'),
 ('Design Studio', '101 Pine St, Chicago', 'info@designstudio.com', 'https://www.designstudio.com', 20, 30, 150, 'Design Studio offers creative design services for various industries...', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3kFVqXzPkD-7_lywTXlD1xju1yvzz48EHKs9lngRBvA&s', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3kFVqXzPkD-7_lywTXlD1xju1yvzz48EHKs9lngRBvA&s', 'Our team of designers brings ideas to life through stunning visuals...', 'Design'),
 ('Financial Experts LLC', '202 Maple St, Houston', 'contact@financialexperts.com', 'https://www.financialexperts.com', 15, 25, 120, 'Financial Experts LLC provides comprehensive accounting services...', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxK8fivAboqqFC6ptQTSH-366XQ06DNivd5v09Q9kSIA&s', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxK8fivAboqqFC6ptQTSH-366XQ06DNivd5v09Q9kSIA&s', 'We help businesses manage their finances effectively and optimize profitability...', 'Finance');

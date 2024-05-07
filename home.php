@@ -231,7 +231,7 @@
                             // Output data of each row
                             while ($row = $result->fetch_assoc()) {
                                 echo "
-                                <div class='company-item'>
+                                <a class='company-item' href='./index.php?page=company-detail&id=" . $row['company_id'] . "'>
                                     <div class='company-image'>
                                         <img src='" . $row['company_image'] . "'>
                                     </div>
@@ -239,7 +239,7 @@
                                     <h3 class='company-name'>" . $row['company_name'] . "</h3>
             
                                     <p class='job-info'><span>" . $row['company_quantity_job'] . "</span> | " . $row['company_address'] . "</p>
-                            </div>  ";
+                            </a>  ";
                             }
                         } else {
                             echo "0 results";
