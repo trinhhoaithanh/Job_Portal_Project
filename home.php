@@ -7,11 +7,12 @@
     <title>JobNest - A best place to start a job</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <!-- Carousel -->
     <section class="carousel">
@@ -73,29 +74,50 @@
                 </div>
 
                 <div class="job-field">
-                    <div class="job-field-item">
-                        <i class="icon fa-solid fa-dollar-sign"></i>
-                        <h6 class="job-field-title">Finance</h6>
-                        <p class="job-field-quantity">1237 jobs</p>
-                    </div>
+                    <?php
+                    if (isset($_SESSION['username'])) {
+                        $servername = "localhost";
+                        $username = "root";
+                        $password = "";
+                        $dbname = "db_job_portal";
 
-                    <div class="job-field-item job-item-2">
-                        <i class="fa-solid fa-user-graduate icon icon-2"></i>
-                        <h6 class="job-field-title">Education</h6>
-                        <p class="job-field-quantity">3546 jobs</p>
-                    </div>
+                        $conn = new mysqli($servername, $username, $password, $dbname);
 
-                    <div class="job-field-item job-item-3">
-                        <i class="fa-solid fa-code icon icon-3"></i>
-                        <h6 class="job-field-title">IT</h6>
-                        <p class="job-field-quantity">5768 jobs</p>
-                    </div>
+                        // Check connection
+                        if ($conn->connect_error) {
+                            die("Connection failed: " . $conn->connect_error);
 
-                    <div class="job-field-item job-item-4   ">
-                        <i class="fa-solid fa-rectangle-ad icon icon-4"></i>
-                        <h6 class="job-field-title">Marketing</h6>
-                        <p class="job-field-quantity">2473 jobs</p>
-                    </div>
+                        }
+
+                        $sql = "SELECT * FROM categories";
+                        $result = $conn->query($sql);
+
+
+                        if ($result->num_rows > 0) {
+                            // Output data of each row
+                            while ($row = $result->fetch_assoc()) {
+                                echo "
+                            <div class='job-field-item'>
+                            <h6 class='job-field-title'>" . $row['category_name'] . "</h6>
+                            <p class='job-field-quantity'>" . $row['category_job_quantity'] . "</p>
+                        </div>  ";
+                            }
+                        } else {
+                            echo "0 results";
+                        }
+
+                        // Close the database connection
+                        $conn->close();
+
+
+
+                    } else {
+                        echo "<script>alert('You need to login to view the list of products'); window.location.href = 'http://localhost/JobPortalProject/index.php?page=login';</script>";
+                    }
+
+
+                    ?>
+                    
                 </div>
             </div>
         </div>
@@ -113,166 +135,78 @@
                 </div>
 
                 <div class="lastest-list">
-                    <div class="lastest-item">
-                        <div class="job-info">
-                            <div class="job-info-logo">
-                                <img src="./assets/images/job-img.svg" alt="">
+                    <?php
+                    if (isset($_SESSION['username'])) {
+                        $servername = "localhost";
+                        $username = "root";
+                        $password = "";
+                        $dbname = "db_job_portal";
+
+                        $conn = new mysqli($servername, $username, $password, $dbname);
+
+                        // Check connection
+                        if ($conn->connect_error) {
+                            die("Connection failed: " . $conn->connect_error);
+
+                        }
+
+                        $sql = "SELECT Jobs.job_id, Jobs.job_title, Jobs.job_salary, Jobs.job_location, Jobs.job_mode, Companies.company_name, Companies.company_image
+        FROM Jobs
+        JOIN Companies
+        ON Jobs.company_id = Companies.company_id;";
+                        $result = $conn->query($sql);
+
+
+                        if ($result->num_rows > 0) {
+                            // Output data of each row
+                            while ($row = $result->fetch_assoc()) {
+                                echo "
+                            <div class='lastest-item'>
+                        <div class='job-info'>
+                            <div class='job-info-logo'>
+                                <img src='" . $row['company_image'] . "'>
                             </div>
-                            <div class="job-info-detail">
-                                <h3 class="job-info-detail-name">UI / UX Designer</h3>
-                                <p class="job-info-detail-salary">$95K - $120K</p>
-                            </div>
-                        </div>
-                        <div class="job-address">
-                            <i class="fa-solid fa-house"></i>
-                            Laborum
-                        </div>
-
-                        <div class="job-address">
-                            <i class="fa-solid fa-location-dot"></i>
-                            Tucson, AZ
-                        </div>
-
-                        <div class="job-address">
-                            <i class="fa-regular fa-bookmark"></i>
-                            Onsite
-                        </div>
-                    </div>
-
-                    <div class="lastest-item">
-                        <div class="job-info">
-                            <div class="job-info-logo">
-                                <img src="./assets/images/job-img-2.svg" alt="">
-                            </div>
-                            <div class="job-info-detail">
-                                <h3 class="job-info-detail-name">C# Developer</h3>
-                                <p class="job-info-detail-salary">$110K - $120K</p>
-                            </div>
-                        </div>
-                        <div class="job-address">
-                            <i class="fa-solid fa-house"></i>
-                            Pariatur
-                        </div>
-
-                        <div class="job-address">
-                            <i class="fa-solid fa-location-dot"></i>
-                            Columbus, OH
-                        </div>
-
-                        <div class="job-address">
-                            <i class="fa-regular fa-bookmark"></i>
-                            Hybrid
-                        </div>
-                    </div>
-
-                    <div class="lastest-item">
-                        <div class="job-info">
-                            <div class="job-info-logo">
-                                <img src="./assets/images/job-img-3.svg" alt="">
-                            </div>
-                            <div class="job-info-detail">
-                                <h3 class="job-info-detail-name">ReactJS Developer</h3>
-                                <p class="job-info-detail-salary">$110K - $120K</p>
+                            <div class='job-info-detail'>
+                                <h3 class='job-info-detail-name'>" . $row['job_title'] . "</h3>
+                                <p class='job-info-detail-salary'>" . $row['job_salary'] . "</p>
                             </div>
                         </div>
-                        <div class="job-address">
-                            <i class="fa-solid fa-house"></i>
-                            Aliq
+                        <div class='job-address'>
+                            <i class='fa-solid fa-house'></i>
+                            " . $row['company_name'] . "
                         </div>
 
-                        <div class="job-address">
-                            <i class="fa-solid fa-location-dot"></i>
-                            Tulsa, OK
+                        <div class='job-address'>
+                            <i class='fa-solid fa-location-dot'></i>
+                            " . $row['job_location'] . "
                         </div>
 
-                        <div class="job-address">
-                            <i class="fa-regular fa-bookmark"></i>
-                            Remote
+                        <div class='job-address'>
+                            <i class='fa-regular fa-bookmark'></i>
+                            " . $row['job_mode'] . "
                         </div>
-                    </div>
+                    </div> ";
+                            }
+                        } else {
+                            echo "0 results";
+                        }
 
-                    <div class="lastest-item">
-                        <div class="job-info">
-                            <div class="job-info-logo">
-                                <img src="./assets/images/job-img-4.svg" alt="">
-                            </div>
-                            <div class="job-info-detail">
-                                <h3 class="job-info-detail-name">UI / UX Designer</h3>
-                                <p class="job-info-detail-salary">$95K - $120K</p>
-                            </div>
-                        </div>
-                        <div class="job-address">
-                            <i class="fa-solid fa-house"></i>
-                            Deserunt
-                        </div>
+                        // Close the database connection
+                        $conn->close();
 
-                        <div class="job-address">
-                            <i class="fa-solid fa-location-dot"></i>
-                            Santa Ana, CA
-                        </div>
 
-                        <div class="job-address">
-                            <i class="fa-regular fa-bookmark"></i>
-                            Onsite
-                        </div>
-                    </div>
 
-                    <div class="lastest-item">
-                        <div class="job-info">
-                            <div class="job-info-logo">
-                                <img src="./assets/images/job-img-5.svg" alt="">
-                            </div>
-                            <div class="job-info-detail">
-                                <h3 class="job-info-detail-name">IT Director</h3>
-                                <p class="job-info-detail-salary">$130K - $140K</p>
-                            </div>
-                        </div>
-                        <div class="job-address">
-                            <i class="fa-solid fa-house"></i>
-                            Laboru
-                        </div>
+                    } else {
+                        echo "<script>alert('You need to login to view the list of products'); window.location.href = 'http://localhost/JobPortalProject/index.php?page=login';</script>";
+                    }
 
-                        <div class="job-address">
-                            <i class="fa-solid fa-location-dot"></i>
-                            Austin, TX
-                        </div>
 
-                        <div class="job-address">
-                            <i class="fa-regular fa-bookmark"></i>
-                            Hybrid
-                        </div>
-                    </div>
-
-                    <div class="lastest-item">
-                        <div class="job-info">
-                            <div class="job-info-logo">
-                                <img src="./assets/images/job-img-6.svg" alt="">
-                            </div>
-                            <div class="job-info-detail">
-                                <h3 class="job-info-detail-name">Product Manager</h3>
-                                <p class="job-info-detail-salary">$110K - $120K</p>
-                            </div>
-                        </div>
-                        <div class="job-address">
-                            <i class="fa-solid fa-house"></i>
-                            Esse Lorem
-                        </div>
-
-                        <div class="job-address">
-                            <i class="fa-solid fa-location-dot"></i>
-                            Wichita, KS
-                        </div>
-
-                        <div class="job-address">
-                            <i class="fa-regular fa-bookmark"></i>
-                            Remote
-                        </div>
-                    </div>
+                    ?>
                 </div>
 
-                <div class="see-more-button">
+                <!-- <div class="see-more-button">
                     <button>See more</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -289,7 +223,55 @@
                 </div>
 
                 <div class="company-list">
-                    <div class="company-item">
+                <?php
+                    if (isset($_SESSION['username'])) {
+                        $servername = "localhost";
+                        $username = "root";
+                        $password = "";
+                        $dbname = "db_job_portal";
+
+                        $conn = new mysqli($servername, $username, $password, $dbname);
+
+                        // Check connection
+                        if ($conn->connect_error) {
+                            die("Connection failed: " . $conn->connect_error);
+
+                        }
+
+                        $sql = "SELECT * FROM companies";
+                        $result = $conn->query($sql);
+
+
+                        if ($result->num_rows > 0) {
+                            // Output data of each row
+                            while ($row = $result->fetch_assoc()) {
+                                echo "
+                                <div class='company-item'>
+                                <div class='company-image'>
+                                    <img src='" . $row['company_image'] . "' alt='>
+                                </div>
+        
+                                <h3 class='company-name'>" . $row['company_name'] . "</h3>
+        
+                                <p class='job-info'><span>" . $row['company_quanity_job'] . "</span> | " . $row['comapny_address'] . "</p>
+                            </div>  ";
+                            }
+                        } else {
+                            echo "0 results";
+                        }
+
+                        // Close the database connection
+                        $conn->close();
+
+
+
+                    } else {
+                        echo "<script>alert('You need to login to view the list of products'); window.location.href = 'http://localhost/JobPortalProject/index.php?page=login';</script>";
+                    }
+
+
+                    ?>
+                    <!-- <div class="company-item">
                         <div class="company-image">
                             <img src="./assets/images/company-1.svg" alt="">
                         </div>
@@ -327,12 +309,12 @@
                         <h3 class="company-name">DESERUNT</h3>
 
                         <p class="job-info"><span>24 jobs</span> | New York</p>
-                    </div>
+                    </div> -->
                 </div>
 
-                <div class="see-more-button">
+                <!-- <div class="see-more-button">
                     <button>See more</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

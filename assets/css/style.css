@@ -241,17 +241,10 @@ a {
 }
 
 .explore .inner-wrap .job-field .job-field-item{
-  width: 216px; 
-  height: 216px; 
   background: #ECFDFCFF;
   border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   padding: 20px 0;
 }
-
 .job-item-2{
   background: #FFF6F0FF !important; 
 }
@@ -365,7 +358,7 @@ a {
 
 .lastest .inner-wrap .lastest-list{
   display: flex;
-  justify-content: space-between;
+  
   flex-wrap: wrap;
   margin-top: 40px;
 }
@@ -403,8 +396,9 @@ a {
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  width: calc(100%/3 - 10px);
-  margin-top: 20px;
+  width: calc(100% / 3 - 20px);
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .lastest .inner-wrap .lastest-list .lastest-item .job-info .job-info-logo img{

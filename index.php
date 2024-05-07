@@ -37,12 +37,10 @@
             include './register/register.php';
         elseif ($page == 'company')
             include './company/company.php';
-        // elseif ($page == 'dashboard')
-        //     include './dashboard/dashboard.php';
-        // elseif ($page == 'productform')
-        //     include './product/product_form.php';
-        // elseif ($page == 'updateproduct')
-        //     include './product/update_product.php';
+        elseif ($page == 'candidate')
+            include './candidate/candidate.php';
+        elseif ($page == 'job')
+            include './job/job.php';
         // elseif ($page == 'ajax')
         //     include './ajax/ajax.php';
         // elseif ($page == 'product_detail')
