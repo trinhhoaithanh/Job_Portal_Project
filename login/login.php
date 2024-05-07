@@ -58,6 +58,7 @@
                             required name="password" placeholder="Enter your password" type="password"
                             class="form-control" id="exampleInputPassword1">
                     </div>
+                    
                     <div style="text-align:center">
                         <button type="submit" name="login" value="login" class="btn-login btn btn-success">Sign
                             In</button>
@@ -67,7 +68,7 @@
                 <p>Don't have an account? <a style="font-size: 14px; 
                                                     line-height: 22px; 
                                                     font-weight: 700; 
-                                                    color: #0EA89BFF;" href="./index.php?page=register">Sign up</a></p>
+                                                    color: #0EA89BFF;" href="../index.php?page=register">Sign up</a></p>
             </div>
 
         </div>

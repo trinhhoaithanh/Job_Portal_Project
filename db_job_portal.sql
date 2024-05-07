@@ -6,7 +6,7 @@ CREATE TABLE `Users` (
   `user_name` VARCHAR(50) NOT NULL,
   `user_password` VARCHAR(50) NOT NULL,
   `user_email` VARCHAR(100),
-  `user_role` ENUM ('Employer', 'Job Seeker', 'Guest') NOT NULL
+  `user_role` VARCHAR(50)
 );
 
 CREATE TABLE `Jobs` (

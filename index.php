@@ -43,6 +43,8 @@
             include './job/job.php';
         elseif ($page == 'company-detail')
             include './company/company-detail.php';
+        elseif ($page == 'company-detail')
+            include './company/company-detail.php';
     } else {
         // Default to home.php
         include 'home.php';
