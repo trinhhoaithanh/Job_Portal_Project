@@ -253,7 +253,7 @@
         
                                 <h3 class='company-name'>" . $row['company_name'] . "</h3>
         
-                                <p class='job-info'><span>" . $row['company_quanity_job'] . "</span> | " . $row['comapny_address'] . "</p>
+                                <p class='job-info'><span>" . $row['company_quantity_job'] . "</span> | " . $row['company_address'] . "</p>
                             </div>  ";
                             }
                         } else {
