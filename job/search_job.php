@@ -21,6 +21,24 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
+        .card {
+        width: 1100px;
+        height: 1100px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+        }
+        .card-1 {
+        width: 350px;
+        height: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+        }
         footer {
     clear: both;
     position: relative;
@@ -147,6 +165,7 @@
                 if (mysqli_num_rows($result) > 0) {
                     // Loop through the results and print each company
                     while ($row = mysqli_fetch_assoc($result)) {
+                        echo '<div class="card-1">';
                         echo '<div class="company">';
                         if ($row['jobTitle'] !== null) {
                             echo '<h2>' . $row['jobTitle'] . '</h2>';
@@ -167,7 +186,7 @@
                         if ($row['employmentType'] !== null) {
                             echo '<h8>Employment type: ' . $row['employmentType'] . '</h8><br>';
                         }
-                        echo '</div>';
+                        echo '</div></div><br><br><br>';
                     }
                 } else {
                     echo 'No companies found.';
@@ -182,6 +201,7 @@
             $result = mysqli_query($conn, $sql);
             if (mysqli_num_rows($result) > 0) {
                 if ($row = mysqli_fetch_assoc($result)) {
+                    echo '<div class="card">';
                     if ($row['companyName'] !== null) {
                         echo '<center><h1>' . $row['companyName'] . '</h1></center><br><br>';
                     }
