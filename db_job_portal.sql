@@ -9,18 +9,25 @@ CREATE TABLE `Users` (
   `user_role` VARCHAR(50)
 );
 
-CREATE TABLE `Jobs` (
-  `job_id` INT PRIMARY KEY AUTO_INCREMENT,
-  `employer_id` INT NOT NULL,
-  `company_id` INT NOT NULL,
-  `job_title` VARCHAR(100) NOT NULL,
-  `job_description` TEXT,
-  `job_location` VARCHAR(100),
-  `job_salary` DECIMAL(10,2),
-  `date_posted` DATE,
-  `job_mode` VARCHAR(50),
-  `job_type` VARCHAR(50),
-  `category_id` INT
+CREATE TABLE IF NOT EXISTS `jobs` (
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
+    `jobTitle` VARCHAR(255),
+    `jobLocation` TEXT,
+    `employmentType` VARCHAR(255),
+    `specifics` VARCHAR(255),
+    `agreement` VARCHAR(255),
+    `min` INT,
+    `max` INT,
+    `jobDescription` TEXT,
+    `companyName` VARCHAR(255),
+    `employees` VARCHAR(255),
+    `companyDescription` TEXT,
+    `contactPerson` VARCHAR(255),
+    `companyLocation` TEXT,
+    `displayContactPerson` VARCHAR(255),
+    `email` VARCHAR(255),
+    `web` VARCHAR(255),
+    `typeReceive` VARCHAR(255)
 );
 
 CREATE TABLE `CVs` (
@@ -148,14 +155,13 @@ VALUES
 ('Design Studio', '101 Pine St, Chicago', 'info@designstudio.com', 'https://www.designstudio.com', 20, 30, 150, 'Design Studio offers creative design services for various industries...', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3kFVqXzPkD-7_lywTXlD1xju1yvzz48EHKs9lngRBvA&s', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3kFVqXzPkD-7_lywTXlD1xju1yvzz48EHKs9lngRBvA&s', 'Our team of designers brings ideas to life through stunning visuals...', 'Design'),
 ('Financial Experts LLC', '202 Maple St, Houston', 'contact@financialexperts.com', 'https://www.financialexperts.com', 15, 25, 120, 'Financial Experts LLC provides comprehensive accounting services...', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxK8fivAboqqFC6ptQTSH-366XQ06DNivd5v09Q9kSIA&s', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxK8fivAboqqFC6ptQTSH-366XQ06DNivd5v09Q9kSIA&s', 'We help businesses manage their finances effectively and optimize profitability...', 'Finance');
 
-
-INSERT INTO Jobs (employer_id, company_id, job_title, job_description, job_location, job_salary, date_posted, job_mode, job_type, category_id) 
+INSERT INTO jobs (jobTitle, jobLocation, employmentType, specifics, min, max, jobDescription, companyName, employees, companyDescription, contactPerson, companyLocation, email, typeReceive) 
 VALUES 
-(1, 1, 'Software Engineer', 'Seeking an experienced software engineer...', 'New York', 80000.00, '2024-04-25', 'Hybrid', 'Full-time', 1),
-(2, 2, 'Marketing Manager', 'We are looking for a skilled marketing manager...', 'Los Angeles', 70000.00, '2024-04-28', 'Onsite', 'Full-time', 2),
-(3, 3, 'Data Analyst Intern', 'Exciting opportunity for a data analyst intern...', 'San Francisco', 30000.00, '2024-05-01', 'Remote', 'Intern', 3),
-(1, 4, 'Graphic Designer', 'Join our creative team as a graphic designer...', 'Chicago', 60000.00, '2024-05-03', 'Onsite', 'Full-time', 4),
-(4, 5, 'Accountant', 'We are hiring an accountant to manage financial records...', 'Houston', 65000.00, '2024-05-05', 'Hybrid', 'Full-time', 5);
+('Database Administrator', 'Ha Noi', 'Part time', 'Specific', '7000', '9000', 'Database administrators analyze and evaluate the data needs of users. They develop and improve the data resources used to store and retrieve critical information. They need the problem-solving skills of the computer science major to correct any malfunctions in databases and to modify systems in line with the evolving needs of users.', 'FPT', '240', 'FPT, officially the FPT Corporation (Vietnamese: Công ty Cổ phần FPT, lit. &#039;FPT Joint Stock Company&#039;; &quot;FPT&quot; stands for Financing and Promoting Technology), is the largest information technology service company in Vietnam with its core business focusing on consulting, providing technology and telecommunications services.', 'Trương Gia Bình', 'Ha Noi', 'email', 'Ha Noi');
+
+INSERT INTO jobs (jobTitle, jobLocation, employmentType, agreement, jobDescription, companyName, employees, companyDescription, contactPerson, companyLocation, displayContactPerson, web, typeReceive) 
+VALUES 
+('Computer Hardware Engineer', 'Kien Giang', 'Full time', 'Specific', '7000', '9000', 'Computer hardware engineers are responsible for designing, developing, and testing computer components, such as circuit boards, routers, and memory devices. Computer hardware engineers need a combination of creativity and technical expertise. They must be avid learners who stay on top of emerging trends in the field to create hardware that can accommodate the latest programs and applications. Computer hardware engineers must have the perseverance to perform comprehensive tests of systems, again and again, to ensure the hardware is functioning as it should.', 'VNPT', '250-320', 'Vietnam Posts and Telecommunications Group (VNPT, Vietnamese: Tập đoàn Bưu chính Viễn thông Việt Nam), is a telecommunications company, owned by the Vietnamese Government, and the national post office of Vietnam. According to a list of UNDP in 2007, it is the second-largest company in Vietnam. It owns Vinaphone, one of the three largest mobile network operators in Vietnam.', 'Tào Đức Thắng', 'Kien Giang', 'display', 'web', 'thang.tao1997@gmail.com');
 
 INSERT INTO CVs (seeker_id, cv_file_path, cv_description, updated_date) 
 VALUES 
