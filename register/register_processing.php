@@ -14,10 +14,10 @@ function hashPassword($password)
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
-    // $password = hashPassword($_POST['password']);
     $password = $_POST['password'];
 
     $useremail = $_POST['useremail'];
+    $userrole = $_POST['userrole'];
 
 
     // Check if username already exists
@@ -28,10 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo '<script type="text/javascript">alert("Username already exists. Please choose a different username.\n");</script>';
     } else {
         // Insert the user if the username doesn't exist
-        $sql_insert = "INSERT INTO users (user_name, user_password, user_email, user_role) VALUES ('$username', '$password','$useremail', 'Job Seeker')";
+        $sql_insert = "INSERT INTO users (user_name, user_password, user_email, user_role) VALUES ('$username', '$password','$useremail', '$userrole')";
         if ($conn->query($sql_insert) === TRUE) {
             echo '<script type="text/javascript">alert("User created successfully\n");</script>';
-            echo '<script type="text/javascript">window.location.href = "./index.php?page=login";</script>';
+            echo '<script type="text/javascript">window.location.href = "../index.php?page=login";</script>';
         } else {
             echo '<script type="text/javascript">alert("Error: " . $sql_insert . "<br>" . $conn->error);</script>';
         }

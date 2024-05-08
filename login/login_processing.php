@@ -19,7 +19,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows == 1) {
         $row = $result->fetch_assoc();
-        // $role = $row["role"];
 
         if ($password == $row["user_password"]) {
             // Login successful
@@ -44,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             //     echo "<script>alert('Login successfully'); window.location.href = './index.php?page=home';</script>";
             // }
 
-            echo "<script>alert('Login successfully'); window.location.href = './index.php?page=home';</script>";
+            echo "<script>alert('Login successfully'); window.location.href = '../index.php?page=home';</script>";
 
             exit(); 
         } else {

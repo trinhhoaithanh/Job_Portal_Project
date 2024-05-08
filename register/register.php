@@ -102,6 +102,21 @@
                                 id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
 
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input name="userrole" class="form-check-input" type="radio" value="jobseeker" id="flexCheckDefault" checked>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Job Seeker
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input name="userrole" class="form-check-input" type="radio" value="employer" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Employer
+                                </label>
+                            </div>
+                        </div>
+
                         <div style="text-align:center">
                             <button type="submit" name="login" value="login"
                                 class="btn-login btn btn-success">Register</button>

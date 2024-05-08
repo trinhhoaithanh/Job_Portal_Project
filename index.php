@@ -41,6 +41,10 @@
             include './candidate/candidate.php';
         elseif ($page == 'job')
             include './job/job.php';
+        elseif ($page == 'company-detail')
+            include './company/company-detail.php';
+        elseif ($page == 'company-detail')
+            include './company/company-detail.php';
     } else {
         // Default to home.php
         include 'home.php';
@@ -49,7 +53,7 @@
 
 
     <?php
-        include 'assets/utils/footer.php';
+    include 'assets/utils/footer.php';
     ?>
     <script src="assets/js/bootstrap.min.js"></script>
 

@@ -17,9 +17,6 @@
                         </li>
                         <li class="nav-item" ><a href="./index.php?page=company">Companies</a>
                         </li>
-                        <li class="nav-item" ><a href="./index.php?page=candidate">Candidates</a>
-                        </li>
-                
                         <li class="nav-item" ><a href="./index.php?page=login">Login</a>
                         </li>
                         <li class="nav-item"><a

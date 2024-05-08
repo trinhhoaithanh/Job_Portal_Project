@@ -16,14 +16,26 @@
                     </li>
                     <li class="nav-item"><a href="./index.php?page=company">Companies</a>
                     </li>
+                
                     <li class="nav-item"><a href="./index.php?page=candidate">Candidates</a>
                     </li>
+                    <li class="nav-item"><a href="./index.php?page=profile"><a href="#"> 
+                        <!-- link candidate profile -->
+                            <?php
+                            if (isset($_SESSION['username'])) {
+                                echo "<p>" . $_SESSION['username'] . "</p>";
+                            }
+                            ?>
+                        </a>
+                    </li>
+                    
                     <li class="nav-item"><a href="assets/utils/logout.php">Log out</a></li>
                 </ul>
             </div>
 
             <div class="contact">
                 <ul class="contact-list">
+
                     <li class="contact-item">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     </li>
